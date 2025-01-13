@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- Pacman -->
+    <g transform="translate(0, 50)">
+        <path fill="#FFCC00">
+            <animate attributeName="d" 
+                     values="M30 0A30 30 0 0 1 30 60A30 30 0 0 1 30 0L30 30Z;
+                             M30 0A30 30 0 0 1 30 60A30 30 0 0 1 30 0L30 30L30 30Z;
+                             M30 0A30 30 0 0 1 30 60A30 30 0 0 1 30 0L30 30Z"
+                     dur="0.5s"
+                     repeatCount="indefinite"/>
+        </path>
+    </g>
+
+    <!-- Contribution dots -->
+    <g id="dots">
+        <circle cx="150" cy="50" r="8" fill="#196127">
+            <animate attributeName="opacity"
+                     values="1;0"
+                     dur="0.2s"
+                     begin="1s"
+                     fill="freeze"/>
+        </circle>
+        <circle cx="250" cy="50" r="8" fill="#239a3b">
+            <animate attributeName="opacity"
+                     values="1;0"
+                     dur="0.2s"
+                     begin="1.5s"
+                     fill="freeze"/>
+        </circle>
+        <circle cx="350" cy="50" r="8" fill="#7bc96f">
+            <animate attributeName="opacity"
+                     values="1;0"
+                     dur="0.2s"
+                     begin="2s"
+                     fill="freeze"/>
+        </circle>
+        <circle cx="450" cy="50" r="8" fill="#196127">
+            <animate attributeName="opacity"
+                     values="1;0"
+                     dur="0.2s"
+                     begin="2.5s"
+                     fill="freeze"/>
+        </circle>
+    </g>
+
+    <!-- Pacman movement -->
+    <animateMotion xlink:href="#pacman"
+                   dur="3s"
+                   repeatCount="indefinite"
+                   path="M0 0 H 600"/>
+</svg>
